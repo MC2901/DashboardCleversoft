@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-columns: 1fr;
+  }
+  
+  .alarmaYBackup {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  
+  .ticketsYEvolucion {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  
+  .estadoServidores {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  
+  .salaDeEspera {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }

@@ -1,0 +1,62 @@
+.estadoServidores {
+  border-collapse: collapse;
+  width: 100%;
+}
+.estadoServidores th, td {
+  text-align: left;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+ 
+}
+
+.estadoServidores th {
+  background-color: #375964;
+  color: white;
+}
+
+.estadoServidores tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.estadoServidores tr:hover {
+  background-color: #ddd;
+}
+
+.estado {
+  font-weight: bold;
+  color: white;
+}
+
+.estado.activo {
+  background-color: #28a745;
+}
+
+.estado.inactivo {
+  background-color: #dc3545;
+}
+
+.progressBarContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.percentage {
+  margin-right: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  background-color: #ccc;
+}
+
+.progress-bar-color {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #25ff06;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
