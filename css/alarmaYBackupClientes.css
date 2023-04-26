@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .cliente-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 15rem;
+    padding: 0.3rem;
+    margin: 0.1rem; /* reducido a 5px */
+  }
+  
+  .cliente-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cliente-titulo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .backup-indicator {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  
+  .backup-indicator.up {
+    background-color: #28a745;
+    
+}
+  
+  .backup-indicator.down {
+    background-color: #dc3545;
+
+  }
+  
+  .backup-indicator i {
+    color: #fff;
+    margin-top: 0.4rem;
+  }
+  
+  .cliente-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .estado-sql, .estado-server {
+    border-radius: 5px;
+    color: #fff;
+    height: 30px;
+    text-align: center;
+    width: 70px;
+    line-height: 30px;
+    margin-right: 10px; /* agregado 10px para un espacio entre ellos */
+  }
+  
+  .estado-sql.activo {
+    background-color: #28a745;
+  }
+  
+  .estado-sql.inactivo {
+    background-color: #A9A9A9;
+  }
+  
+  .estado-server.activo {
+    background-color: #28a745;
+  }
+  
+  .estado-server.inactivo {
+    background-color: #A9A9A9;
+  }
+  
+  .cuadricula {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cuadricula {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cliente-card {
+      margin: 10px auto;
+    }
+  }

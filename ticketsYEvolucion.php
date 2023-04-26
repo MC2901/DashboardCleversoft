@@ -12,7 +12,7 @@
     <div class="container">
 
         <?php
-        echo '<h1>Tickets y Evolución</h1>';
+        echo "<h1 style='text-align:center'>Tickets y Evolución</h1>";
         class TicketsYEvolucion
         {
             public $title;
@@ -64,16 +64,16 @@
             // Datos estáticos para los gráficos de ejemplo
             const dataSoporte = {
                 label: "Soporte",
-                backgroundColor: "rgba(255, 99, 132, 0.2)",
-                borderColor: "rgba(255, 99, 132, 1)",
+                backgroundColor: "#28a745",
+                borderColor: "#28a745",
                 borderWidth: 1,
                 data: [12, 19, 3, 5, 2, 3, 7, 8, 2, 5, 6, 14]
             };
 
             const dataDesarrollo = {
                 label: "Desarrollo",
-                backgroundColor: "rgba(54, 162, 235, 0.2)",
-                borderColor: "rgba(54, 162, 235, 1)",
+                backgroundColor: "#ffae06",
+                borderColor: "#ffae06",
                 borderWidth: 1,
                 data: [7, 11, 5, 8, 9, 2, 10, 6, 5, 3, 7, 8]
             };

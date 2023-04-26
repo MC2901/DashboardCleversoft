@@ -33,7 +33,7 @@ class EstadoServidores
 
   public function render()
   {
-    echo "<h1>{$this->title}</h1>";
+    echo "<h1 style='text-align:center'>{$this->title}</h1>";
     echo "<table class='estadoServidores'>";
     echo "<tr><th>Servidor</th><th>Estado</th><th>Memoria</th><th>Porcentaje</th></tr>";
 
