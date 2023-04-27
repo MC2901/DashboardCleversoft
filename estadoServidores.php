@@ -35,25 +35,17 @@ class EstadoServidores
   {
     echo "<h1 style='text-align:center'>{$this->title}</h1>";
     echo "<table class='estadoServidores'>";
-    echo "<tr><th>Servidor</th><th>Estado</th><th>Memoria</th><th>Porcentaje</th></tr>";
+    echo "<tr><th>Servidor</th><th>Estado SQL</th><th>Memoria ocupada</th></tr>";
 
     foreach ($this->serverData as $data) {
-  
-      $estado = strtolower(trim($data['Estado']));
-      $claseEstado = '';
-      if ($estado == 'activo') {
-        $claseEstado = 'activo';
-      } elseif ($estado == 'inactivo') {
-        $claseEstado = 'inactivo';
-      }
-
-      echo "<tr>";
+      echo "<tr class='estadoServidoresTr'>";
       echo "<td>{$data['Servidor']}</td>";
 
-      echo "<td class='estado {$claseEstado}'>";
-      echo "<span>{$data['Estado']}</span>";
-      echo "</td>";
-      echo "<td>{$data['Memoria']}</td>";
+      if ($data['Estado'] == true) {
+        echo "<td class='icono'><i class='fas fa-check-circle' style='color:green;'></i></td>";
+      } else {
+        echo "<td class='icono'><i class='fas fa-times-circle' style='color:red;'></i></td>";
+      }
       echo "<td class='progressBarContainer'>";
       $percentage = intval($data['Porcentaje']);
       echo "<span class='percentage'>$percentage%</span>";

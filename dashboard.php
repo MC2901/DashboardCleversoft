@@ -6,19 +6,18 @@ echo "<div classname= 'estadoServidores'>";
 require 'estadoServidores.php';
 
 $serverData = array(
-    array('Servidor' => 'Servidor 1', 'Estado' => 'Activo', 'Memoria' => '30396 MB', 'Porcentaje' => '93%'),
-    array('Servidor' => 'Servidor 2', 'Estado' => 'Inactivo', 'Memoria' => '43906 MB', 'Porcentaje' => '65%'),
-    array('Servidor' => 'Servidor 3', 'Estado' => 'Activo', 'Memoria' => '12354 MB', 'Porcentaje' => '45%'),
-    array('Servidor' => 'Servidor 4', 'Estado' => 'Activo', 'Memoria' => '24354 MB', 'Porcentaje' => '75%'),
-    array('Servidor' => 'Servidor 5', 'Estado' => 'Activo', 'Memoria' => '18356 MB', 'Porcentaje' => '95%'),
-    array('Servidor' => 'Servidor 6', 'Estado' => 'Activo', 'Memoria' => '15689 MB', 'Porcentaje' => '25%'),
-    array('Servidor' => 'Servidor 7', 'Estado' => 'Activo', 'Memoria' => '45321 MB', 'Porcentaje' => '72%'),
-    array('Servidor' => 'Servidor 8', 'Estado' => 'Activo', 'Memoria' => '6550 MB', 'Porcentaje' => '10%'),
-    array('Servidor' => 'Servidor 9', 'Estado' => 'Inactivo', 'Memoria' => '15002 MB', 'Porcentaje' => '65%'),
-    array('Servidor' => 'Servidor 10', 'Estado' => 'Activo', 'Memoria' => '15623 MB', 'Porcentaje' => '42%'),
-    array('Servidor' => 'Servidor 11', 'Estado' => 'Activo', 'Memoria' => '98735 MB', 'Porcentaje' => '12%'),
-    array('Servidor' => 'Servidor 12', 'Estado' => 'Inactivo', 'Memoria' => '45320 MB', 'Porcentaje' => '82%'),
-    array('Servidor' => 'Servidor 13', 'Estado' => 'Activo', 'Memoria' => '11235 MB', 'Porcentaje' => '91%'),
+    array('Servidor' => 'Servidor 1', 'Estado' => false, 'Porcentaje' => '93%'),
+    array('Servidor' => 'Servidor 2', 'Estado' => true, 'Porcentaje' => '65%'),
+    array('Servidor' => 'Servidor 3', 'Estado' => false, 'Porcentaje' => '44%'),
+    array('Servidor' => 'Servidor 4', 'Estado' => true, 'Porcentaje' => '12%'),
+    array('Servidor' => 'Servidor 5', 'Estado' => true, 'Porcentaje' => '89%'),
+    array('Servidor' => 'Servidor 6', 'Estado' => true, 'Porcentaje' => '57%'),
+    array('Servidor' => 'Servidor 7', 'Estado' => false, 'Porcentaje' => '32%'),
+    array('Servidor' => 'Servidor 8', 'Estado' => false, 'Porcentaje' => '25%'),
+    array('Servidor' => 'Servidor 9', 'Estado' => true, 'Porcentaje' => '40%'),
+    array('Servidor' => 'Servidor 10', 'Estado' => true, 'Porcentaje' => '73%'),
+    array('Servidor' => 'Servidor 11', 'Estado' => true, 'Porcentaje' => '13%'),
+    
 );
 
 $estadoServidores = new EstadoServidores('Estado de Servidores', $serverData);

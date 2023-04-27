@@ -1,6 +1,29 @@
 .containerSalaDeEspera {
-    width: 100%;
-    height: 500px;
     margin: 0 auto;
     text-align: center;
+}
+
+.grafica {
+    width: 100%;
+    height: 400px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    canvas {
+        max-width: 100%;
+        height: 300px;
+    }
 }

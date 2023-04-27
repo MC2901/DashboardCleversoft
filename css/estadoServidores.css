@@ -2,12 +2,14 @@
   border-collapse: collapse;
   width: 100%;
 }
+
+
+
 .estadoServidores th, td {
   text-align: left;
   padding: 8px;
   font-family: Arial, sans-serif;
   font-size: 14px;
- 
 }
 
 .estadoServidores th {
@@ -26,14 +28,6 @@
 .estado {
   font-weight: bold;
   color: white;
-}
-
-.estado.activo {
-  background-color: #28a745;
-}
-
-.estado.inactivo {
-  background-color: #dc3545;
 }
 
 .progressBarContainer {
@@ -60,5 +54,28 @@
   width: 0;
   transition: width 1s ease-in-out;
 }
- /*<i class="fa-solid fa-circle-chevron-up" style="color: #28a745;"></i>*/
-/**/
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.icono{
+padding-left: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .estadoServidores th, .estadoServidores td {
+    font-size: 12px;
+  }
+
+  .estadoServidores {
+    font-size: 12px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}

@@ -72,3 +72,36 @@
     width: 48%;
     height: auto;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .ticketsYEvolucion {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .container-graficos {
+        flex-wrap: wrap;
+    }
+
+    .chart {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .celda {
+        width: 100%;
+    }
+
+    .celda-data1 {
+        margin-bottom: 3px;
+        font-size: 28px;
+    }
+
+    .celda-data2 {
+        font-size: 12px;
+    }
+}
