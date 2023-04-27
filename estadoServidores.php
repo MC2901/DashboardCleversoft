@@ -33,19 +33,25 @@ class EstadoServidores
 
   public function render()
   {
-    echo "<h1 style='text-align:center'>{$this->title}</h1>";
     echo "<table class='estadoServidores'>";
-    echo "<tr><th>Servidor</th><th>Estado SQL</th><th>Memoria ocupada</th></tr>";
+    echo "<tr><th>Servidor</th><th>Estado servidor</th><th>Estado SQL</th><th>Memoria ocupada</th></tr>";
 
     foreach ($this->serverData as $data) {
       echo "<tr class='estadoServidoresTr'>";
       echo "<td>{$data['Servidor']}</td>";
 
-      if ($data['Estado'] == true) {
+      if ($data['EstadoSQL'] == true) {
         echo "<td class='icono'><i class='fas fa-check-circle' style='color:green;'></i></td>";
       } else {
         echo "<td class='icono'><i class='fas fa-times-circle' style='color:red;'></i></td>";
       }
+
+      if ($data['EstadoServidor'] == true) {
+        echo "<td class='icono'><i class='fas fa-check-circle' style='color:green;'></i></td>";
+      } else {
+        echo "<td class='icono'><i class='fas fa-times-circle' style='color:red;'></i></td>";
+      }
+
       echo "<td class='progressBarContainer'>";
       $percentage = intval($data['Porcentaje']);
       echo "<span class='percentage'>$percentage%</span>";

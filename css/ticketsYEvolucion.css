@@ -1,107 +1,106 @@
 .ticketsYEvolucion {
-    border-collapse: collapse;
-    margin: auto;
-    width: 50%;
-    text-align: center;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%; /* Cambiado de 50% */
+  text-align: center;
 }
-
 .celda {
-    position: relative;
-    display: inline-flex;
-    height: 8rem;
-    width: 8rem;
-    background-color: #375964;
-    border: 1px solid #e4e4e4;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 5px;
+  position: relative;
+  display: inline-flex;
+  height: 4rem;
+  width: 4rem;
+  background-color: #375964;
+  border: 1px solid #e4e4e4;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6px;
+  border-radius: 5px;
 
-    /* New styles */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: box-shadow 0.3s; /* Transición de la Sombra */
+  /* New styles */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  transition: box-shadow 0.3s; /* Transición de la Sombra */
 }
 
 .celda:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra Al Hacer Hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra Al Hacer Hover */
 }
 
 .celda:before {
-    content: '';
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    border-radius: 5px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border-radius: 5px;
+  z-index: -1;
 }
 
 .celda .celda-titulo {
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #fff;
-    text-transform: uppercase;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .celda .celda-data1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
 }
 
 .celda .celda-data2 {
-    font-size: 16px;
-    color: #fff;
-    opacity: 0.7;
-    text-transform: uppercase;
+  font-size: 8px;
+  color: #fff;
+  opacity: 0.7;
+  text-transform: uppercase;
 }
 
 .container-graficos {
-    max-width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .chart {
-    width: 48%;
-    height: auto;
+  width: 48%;
+  height: auto;
 }
 
 /* Media Queries */
 
 @media (max-width: 768px) {
-    .ticketsYEvolucion {
-        width: 100%;
-        margin-top: 1rem;
-    }
+  .ticketsYEvolucion {
+    width: 100%;
+    margin-top: 1rem;
+  }
 
-    .container-graficos {
-        flex-wrap: wrap;
-    }
+  .container-graficos {
+    flex-wrap: wrap;
+  }
 
-    .chart {
-        width: 100%;
-        margin-top: 1rem;
-    }
+  .chart {
+    width: 100%;
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 576px) {
-    .celda {
-        width: 100%;
-    }
+  .celda {
+    width: 100%;
+  }
 
-    .celda-data1 {
-        margin-bottom: 3px;
-        font-size: 28px;
-    }
+  .celda-data1 {
+    margin-bottom: 3px;
+    font-size: 28px;
+  }
 
-    .celda-data2 {
-        font-size: 12px;
-    }
+  .celda-data2 {
+    font-size: 12px;
+  }
 }

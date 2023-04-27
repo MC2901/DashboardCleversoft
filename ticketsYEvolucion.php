@@ -12,7 +12,6 @@
     <div class="container">
 
         <?php
-        echo "<h1 style='text-align:center'>Tickets y Evolución</h1>";
         class TicketsYEvolucion
         {
             public $title;
@@ -64,7 +63,6 @@
             // Datos estáticos para los gráficos de ejemplo
             const dataSoporte = {
                 label: "Soporte",
-                backgroundColor: "#28a745",
                 borderColor: "#28a745",
                 borderWidth: 1,
                 data: [12, 19, 3, 5, 2, 3, 7, 8, 2, 5, 6, 14]
@@ -72,7 +70,6 @@
 
             const dataDesarrollo = {
                 label: "Desarrollo",
-                backgroundColor: "#ffae06",
                 borderColor: "#ffae06",
                 borderWidth: 1,
                 data: [7, 11, 5, 8, 9, 2, 10, 6, 5, 3, 7, 8]
@@ -80,7 +77,7 @@
 
             // Gráfico de tickets
             const chartTickets = new Chart(document.getElementById("chartTickets"), {
-                type: "bar", // Cambiamos el tipo a "bar"
+                type: "line",
                 data: {
                     labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
                     datasets: [dataSoporte, dataDesarrollo]
@@ -95,6 +92,10 @@
                     },
                     maintainAspectRatio: false,
                     responsive: true
+                },
+                title:{
+                    display: true,
+                    text: 'Seguimiento de Tickets'
                 }
             });
         </script>

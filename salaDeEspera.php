@@ -2,7 +2,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 
 <div class="containerSalaDeEspera">
-    <h1>Sala de Espera</h1>
     <?php
     $clubs = [
         [
@@ -45,16 +44,16 @@
     echo "datasets: [";
     echo "  {";
     echo "    label: 'Máximo',";
-    echo "    backgroundColor: '#dc3545',";
-    echo "    borderColor: '#dc3545',";
+    echo "    backgroundColor: '#375964',";
+    echo "    borderColor: '#375964',";
     echo "    borderWidth: 1,";
     echo "    data: " . json_encode($maximo) . ",";
     echo "    stack: 'Stack 0',";
     echo "  },";
     echo "  {";
     echo "    label: 'Activas',";
-    echo "    backgroundColor: '#28a745',";
-    echo "    borderColor: '#28a745',";
+    echo "    backgroundColor: '#218d3d',";
+    echo "    borderColor: '#218d3d',";
     echo "    borderWidth: 1,";
     echo "    data: " . json_encode($activas) . ",";
     echo "    stack: 'Stack 1',";

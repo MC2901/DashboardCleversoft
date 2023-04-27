@@ -1,9 +1,6 @@
 .estadoServidores {
   border-collapse: collapse;
-  width: 100%;
 }
-
-
 
 .estadoServidores th, td {
   text-align: left;
@@ -41,14 +38,14 @@
 }
 
 .progress-bar {
-  height: 10px;
+  height: 5px;
   border-radius: 5px;
   flex-grow: 1;
   background-color: #ccc;
 }
 
 .progress-bar-color {
-  height: 10px;
+  height: 5px;
   border-radius: 5px;
   background-color: #25ff06;
   width: 0;

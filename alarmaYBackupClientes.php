@@ -2,12 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Tarjetas de Clientes</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
   <link rel="stylesheet" href="./css/alarmaYBackupClientes.css">
 </head>
 <body>
-    <h1 style='text-align:center'>Alarma y Backups</h1>
   <?php
     // Arrays con los detalles de cada cliente
     $nombresClientes = ['CARC', 'CASLA', 'VELEZ', 'MACABI', 'MASVIDA', 'SP', '48MM', 'CDG', 'FERRO', 'TEMPERLEY', 'CIRUGIA', 'IDEA', 'GER', 'GEBA', 'C.D.AMIGOS', 'VERMINAL', 'CIUDAD', 'MARTORANI', 'PLATENSE', 'LANUS'];
