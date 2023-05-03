@@ -7,20 +7,20 @@
         [
             'nombre' => 'CASLA',
             'maximo' => 400,
-            'activas' => 400,
-            'cola' => 30
+            'activas' => 200,
+            'cola' => 0
         ],
         [
             'nombre' => 'CARC',
             'maximo' => 400,
-            'activas' => 300,
-            'cola' => 0
+            'activas' => 400,
+            'cola' => 200
         ],
         [
             'nombre' => 'VELEZ',
             'maximo' => 400,
-            'activas' => 400,
-            'cola' => 15
+            'activas' => 100,
+            'cola' => 0
         ],
     ];
 

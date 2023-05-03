@@ -1,8 +1,11 @@
 .ticketsYEvolucion {
   border-collapse: collapse;
-  margin: auto;
-  width: 100%; /* Cambiado de 50% */
+  margin: 0;
+  width: 100%; 
   text-align: center;
+}
+.informacionTickets{
+  padding-left: 4rem;
 }
 .celda {
   position: relative;
@@ -24,7 +27,7 @@
 }
 
 .celda:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra Al Hacer Hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .celda:before {
@@ -61,16 +64,22 @@
 }
 
 .container-graficos {
-  max-width: 50%;
+  max-width: auto;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 0;
 }
 
 .chart {
-  width: 48%;
+  width: auto;
   height: auto;
 }
+
+#chartTickets {
+  width: 93%;
+  height: 80%;
+}
+
 
 /* Media Queries */
 
