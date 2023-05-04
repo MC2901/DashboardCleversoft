@@ -22,7 +22,7 @@ require 'ticketsYEvolucion.php';
 $datos = [
     ['Tickets Abiertos', '257', 'Goal: 20%'],
     ['Tickets Urgentes', '60', 'Goal: 80%'],
-    ['Tickets Cerrados', '80', 'Goal: 30%'],
+    ['Tickets Criticos', '80', 'Goal: 30%'],
     ['Tickets vencidos SLA', '1', 'Goal: 99%'],
 ];
 

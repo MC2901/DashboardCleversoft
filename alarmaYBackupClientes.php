@@ -25,7 +25,8 @@
         </div>
         <div class="cliente-body">
           <div class="estado-sql <?php echo $estadosSQL[$i] ? 'activo' : 'inactivo'; ?>">SQL</div>
-          <div class="estado-server <?php echo $estadosServer[$i] ? 'activo' : 'inactivo'; ?>">Server</div>
+         
+          <div class="estado-server <?php include('./pingservers.php'); echo $estado_servidor_GEBA == 'prendido' ? 'activo' : 'inactivo'; ?>">SERVER</div>
         </div>
       </div>
     <?php endfor; ?>
