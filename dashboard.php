@@ -20,10 +20,10 @@ echo "<div class='ticketsYEvolucion'>";
 require 'ticketsYEvolucion.php';
 
 $datos = [
-    ['Tickets Abiertos', '257', 'Goal: 20%'],
-    ['Tickets Urgentes', '60', 'Goal: 80%'],
-    ['Tickets Criticos', '80', 'Goal: 30%'],
-    ['Tickets vencidos SLA', '1', 'Goal: 99%'],
+    ['Tickets Abiertos', '43', 'Goal: 20%'],
+    ['Tickets Urgentes', '3', 'Goal: 80%'],
+    ['Tickets Criticos', '0', 'Goal: 30%'],
+    ['Tickets vencidos SLA', '2', 'Goal: 90%'],
 ];
 
 $tabla = new TablaTicketsYEvolucion($datos);
